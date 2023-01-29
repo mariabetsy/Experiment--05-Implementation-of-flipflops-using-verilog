@@ -116,7 +116,7 @@ Program for flipflops  and verify its truth table in quartus using Verilog progr
 Developed by: mariabetsy
 RegisterNumber: 22008543 
 */
-
+~~~
 module flipflop(S,R,clock,Q,Qbar);
 input S,R,clock;
 output Q,Qbar;
@@ -173,19 +173,30 @@ fdf6-7451-49c1-8fd4-514cf485bb75](https://user-images.githubusercontent.com/1223
 
 ##TRUTH TABLE
 
+![214209625-c67acfd7-9609-4833-a9a8-80c0a536cff2](https://user-images.githubusercontent.com/122356434/215349092-aa6637d4-8180-4fa9-a275-3db66804a796.png)
 
+![214209642-27f374d4-df64-4f3a-abc9-5e6a8fa7a53b](https://user-images.githubusercontent.com/122356434/215349112-faf22808-5f55-4505-8001-c7a2bd86d15b.png)
 
+![214208533-968c7221-31e3-437a-b2df-d10a926a6bb5](https://user-images.githubusercontent.com/122356434/215349132-eb0bfd1c-38d9-4886-8c56-ae1cc6f5c2ff.png)
 
+![214208666-bd89c8c0-604b-465e-9d4a-f5555e77c88a](https://user-images.githubusercontent.com/122356434/215349160-1f02b5ca-177f-4b04-bea5-509295469d2b.png)
+IGRAMS FOR FLIP FLOPS 
+  
+##TIMING DIAGRAM
+ 
 
-### TIMING DIGRAMS FOR FLIP FLOPS 
+![214130146-8a965a31-3f59-454f-aa4e-1489195d504c](https://user-images.githubusercontent.com/122356434/215349203-de2aade2-29d6-452c-95a4-78f23fd91807.png)
 
+![214201346-4018bd5e-da03-45c3-87d2-dec11fc6645e](https://user-images.githubusercontent.com/122356434/215349233-0964902a-2551-4f5d-800c-2f89570a9acf.png)
 
+  
+![214204185-b2a73e50-71af-4402-9c9f-7f87e2120dc5](https://user-images.githubusercontent.com/122356434/215349266-0da17754-c9f7-4493-8869-e53ddd11c4d3.png)
 
-Screenshot (105) Screenshot (109)
-
-Screenshot (113) Screenshot (118)
-
-
-
+ 
+![214206444-d06eb3b8-a790-4034-a8c7-7df8049e3805](https://user-images.githubusercontent.com/122356434/215349273-6950d439-e0e0-4cc8-981a-8ee6148acf07.png)
 
 ### RESULTS 
+
+
+
+The program for designing book cover page using html and css is executed successfully
