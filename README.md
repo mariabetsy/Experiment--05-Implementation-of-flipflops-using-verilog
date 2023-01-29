@@ -102,27 +102,76 @@ Q(t+1)=T′Q(t)+TQ(t)′
 ⇒Q(t+1)=T⊕Q(t)
 
 ### Procedure
-/* write all the steps invloved */
+~~~
+1.using nand gates and wires construct SR flip flop
+2.Repeat same steps to construct JK,D,T,flipflop
+3.Find Rtl logic and timing diagram for all flipflop 
+4.end the prorgam
 
-
+~~~
 
 ### PROGRAM 
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: mariabetsy
+RegisterNumber: 22008543 
 */
 
+module flipflop(S,R,clock,Q,Qbar);
+input S,R,clock;
+output Q,Qbar;
+wire X,Y;
+nand(X,S,clock);
+nand(Y,R,clock);
+nand(Q,X,Qbar);
+nand(Qbar,Y,Q);
+endmodule
 
 
+module df(D,clock,Q,Qbar);
+input D,clock;
+output Q,Qbar;
+assign Dbar = ~D;
+wire X,Y;
+nand(X,D,clock);
+nand(Y,Dbar,clock);
+nand(Q,X,Qbar);
+nand(Qbar,Y,Q);
+endmodule
+
+module JKf(J,K,clock,Q,Qbar);
+input J,K,clock;
+output Q,Qbar;
+wire P,S;
+nand(P,J,clock,Qbar);
+nand(S,K,clock,Q);
+nand(Q,P,Qbar);
+nand(Qbar,S,Q);
+endmodule
+
+module Tf(T,clock,Q,Qbar);
+input T,clock;
+output Q,Qbar;
+wire A,B;
+nand(A,T,clock,Qbar);
+nand(B,T,clock,Q);
+nand(Q,A,Qbar);
+nand(Qbar,B,Q);
+endmodule
+~~~
 
 
 
 ### RTL LOGIC FOR FLIPFLOPS 
 
+![214130311-bc328f29-a4c9-4036-8067-1aad515d1b9c](https://user-images.githubusercontent.com/122356434/215348807-371e06da-4ca8-45ca-a42b-17b3ca6a3912.png)
 
 
+![214201255-7f828efa-066a-4b18-bc25-d11503a136b0](https://user-images.githubusercontent.com/122356434/215348826-0a406bb9-829b-4654-857b-41f027cbfc15.png)
+![214204073-5247![214206373-b73a52a1-e7af-47c4-ab7b-b62c3981d6db](https://user-images.githubusercontent.com/122356434/215348855-58796c09-3767-46ae-ad11-54fe6c79ae14.png)
+fdf6-7451-49c1-8fd4-514cf485bb75](https://user-images.githubusercontent.com/122356434/215348845-5c32947f-db1e-488e-af73-37fb7349bc58.png)
 
+##TRUTH TABLE
 
 
 
@@ -132,7 +181,9 @@ RegisterNumber:
 
 
 
+Screenshot (105) Screenshot (109)
 
+Screenshot (113) Screenshot (118)
 
 
 
